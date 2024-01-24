@@ -53,7 +53,6 @@ def plot_top_countries(*args, **kargs):
     plt.ylabel("Country Region")
     plt.title("Latam countries in a global context");
 
-
 '''
 función top_countries:
 
@@ -63,13 +62,14 @@ opcional (number_top, con valor predeterminado de 20).
 - Agrupa los datos por "country_region" y suma los valores.
 - Ordena el DataFrame resultante por el valor en orden descendente.
 - Toma los primeros number_top registros.
-- Transforma la columna "country_region" utilizando una función lambda que asigna "red" si el país está en la lista countries_for_hue, y "lightblue" de lo contrario.
+- Transforma la columna "country_region" utilizando una función lambda que asigna "red" si el
+país está en la lista countries_for_hue, y "lightblue" de lo contrario,
 - Devuelve el DataFrame resultante.
 
 función plot_top_countries:
 
 - La función recibe argumentos posicionales *args y argumentos de palabra clave **kargs, pero no
-los utiliza directamente en el código proporcionado.
+los utiliza directamente en el código.
 Llama a otra función llamada top_countries con los mismos argumentos que recibió (*args y
 **kargs) y almacena el resultado en top_countries_df.
 - Llama a la función top_countries con los argumentos proporcionados y guarda el resultado en
